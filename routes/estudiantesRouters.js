@@ -3,9 +3,9 @@ const router = express.Router();
 const estudiantesController = require('../controllers/estudiantesControllers')
 
 router.post('/', estudiantesController.insertar)
-router.use('/',(req,res)=>{res.send('ejecutando middleware')})
+// router.use('/',(req,res)=>{res.send('ejecutando middleware')})
 router.route('/:id')
-    .get(estudiantesController.consultar)
+    .get(estudiantesController.consultarDetalle)
     .put(estudiantesController.actualizar)
     .delete(estudiantesController.borrar)
 
