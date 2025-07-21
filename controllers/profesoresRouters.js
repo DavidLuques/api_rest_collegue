@@ -1,3 +1,5 @@
+const db = require('../database/config.js')
+
 class ProfesoresController {
     constructor() { }
 

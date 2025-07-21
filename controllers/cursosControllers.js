@@ -1,39 +1,39 @@
 const db = require('../database/config.js')
 
-class EstudiantesController {
+
+class CursosController {
     constructor() {}
 
     consultar(req, res) {
         {
             res.json({
-                msg: "consulta estudiante"
+                msg: "consulta cursos"
             })
         }
     }
 
     insertar(req, res) {
         res.json({
-            msg: "creando estudiante"
+            msg: "creando curso"
         })
     }
     actualizar(req, res) {
         res.json({
-            msg: "actualizacion de estudiante"
+            msg: "actualizacion de curso"
         })
     }
     borrar(req, res) {
         res.json({
-            msg: "Eliminacion de estudiante"
+            msg: "Eliminacion de cur"
         })
     }
     consultarDetalle(req, res) {
         const id= req.params.id;
         res.json({
-            msg:`Consulta detalle estudiande desde clase con id ${id}`
+            msg:`Consulta detalle de curso desde clase con id ${id}`
         })
     }
 
 }
 
-module.exports = new EstudiantesController();
-module.exports = new EstudiantesController();
+module.exports = new CursosController();
